@@ -1,0 +1,13 @@
+.selections {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  background: rgb(82, 82, 230);
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-top: 1rem;
+}
