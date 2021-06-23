@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import movieData from '../../helpers/movieCalls'
 
 function Movies() {
 
-  const [movies, setMovies] = useState()
+  const [movies] = useState()
 
   return (
     <div>

@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Movies from '../Movies/movies'
-
 import "./home.css";
 
 function Home() {
