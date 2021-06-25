@@ -1,0 +1,114 @@
+{
+  "game01": {
+    "title": "Powerstone",
+    "developer": "Capcom",
+    "platform": "Dreamcast",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/1LygW4j/powerstone.jpg"
+  },
+  "game02": {
+    "title": "NBA2K",
+    "developer": "Visual Concepts",
+    "platform": "Dreamcast",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/x7081pB/nba2k.jpg"
+  },
+  "game03": {
+    "title": "Ready 2 Rumble Boxing",
+    "developer": "Midway Games",
+    "platform": "Dreamcast",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/hVgL4p2/r2r-boxing.jpg"
+  },
+  "game04": {
+    "title": "Crazy Taxi",
+    "developer": "Acclaim Studios",
+    "platform": "Dreamcast",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/2F9ZDnG/crazy-taxi.jpg"
+  },
+  "game05": {
+    "title": "NFL2K",
+    "developer": "Visual Concepts",
+    "platform": "Dreamcast",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/smdmZ77/nfl2k.jpg"
+  },
+  "game06": {
+    "title": "House of the Dead 2",
+    "developer": "Sega AM1",
+    "platform": "Dreamcast",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/D8LFfFn/hotd-2.jpg"
+  },
+  "game07": {
+    "title": "Tony Hawks's Pro Skater",
+    "developer": "Activision, Neversoft",
+    "platform": "Playstation",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/9y37ZPK/thps.jpg"
+  },
+  "game08": {
+    "title": "Twisted Metal",
+    "developer": "Incognito Entertainment",
+    "platform": "Playstation",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/wpTfhRb/twisted-metal.jpg"
+  },
+  "game09": {
+    "title": "Tomb Raider",
+    "developer": "Square Enix",
+    "platform": "Playstation",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/xqvFRsv/tomb-raider.jpg"
+  },
+  "game10": {
+    "title": "Resident Evil 2",
+    "developer": "Capcom",
+    "platform": "Playstation",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/b68gFMM/resident-evil.jpg"
+  },
+  "game11": {
+    "title": "Silent Hill",
+    "developer": "Team Silent",
+    "platform": "Playstation",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/N3PVT6s/cilent-hill.png"
+  },
+  "game12": {
+    "title": "Super Mario 64",
+    "developer": "Nintendo",
+    "platform": "Nintendo 64",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/FnNFkNr/super-mario-64.jpg"
+  },
+  "game13": {
+    "title": "GoldenEye 007",
+    "developer": "Nintendo, Rare",
+    "platform": "Nintendo 64",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/1qmWX5q/007.jpg"
+  },
+  "game14": {
+    "title": "WWF No Mercy",
+    "developer": "THQ",
+    "platform": "Nintendo 64",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/VMMXnJv/no-mercy.jpg"
+  },
+  "game15": {
+    "title": "Mario Kart 64",
+    "developer": "Nintendo",
+    "platform": "Nintendo 64",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/k149gQZ/Mario-Kart-64box.png"
+  },
+  "game16": {
+    "title": "WCW vs NWO Revenge",
+    "developer": "THQ",
+    "platform": "Nintendo 64",
+    "numOfCopies": 5,
+    "img": "https://i.ibb.co/4NHSCm0/revenge.jpg"
+  }
+}
