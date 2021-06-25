@@ -1,0 +1,12 @@
+{
+  "firebaseKeys": {
+    "apiKey": "AIzaSyDegazfrJwyF0VcF57biI7fxGtJRx76YcU",
+    "authDomain": "blockbuster-mini.firebaseapp.com",
+    "databaseUrl": "https://blockbuster-mini-default-rtdb.firebaseio.com/",
+    "projectId": "blockbuster-mini",
+    "storageBucket": "blockbuster-mini.appspot.com",
+    "messagingSenderId": "846365876828",
+    "appId": "1:846365876828:web:170ad77eaf42d24ff9bc99",
+    "measurementId": "G-PX77X59G0T"
+  }
+}
