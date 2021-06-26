@@ -24,12 +24,12 @@ function Movies() {
       <h2 className="text-center">Movies</h2>
       <div className="ui container text-center">
         <select name="category" id="category-select" className="ui multiple selection dropdown">
-          <option value="select-movie">Select Genre</option>
-          <option value="horrow">Horror</option>
-          <option value="comdey">Comdey</option>
-          <option value="action">Action</option>
-          <option value="romance">Romance</option>
-          <option value="sci-fi">Sci-fi</option>
+          <option id="select-movie">Select Genre</option>
+          <option id="horrow">Horror</option>
+          <option id="comdey">Comdey</option>
+          <option id="action">Action</option>
+          <option id="romance">Romance</option>
+          <option id="sci-fi">Sci-fi</option>
         </select>
       </div>
       <div className="container-fluid">
