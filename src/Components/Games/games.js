@@ -6,6 +6,8 @@ import axios from "axios";
 
 function Games() {
   const [games, setGames] = useState([]);
+  // const [user, setUser] = useState(true);
+  // const [filteredGames, setFilteredGames] = useState(false);
 
   useEffect(() => {
     axios
@@ -17,22 +19,47 @@ function Games() {
       .catch((err) => console.log("could not get games", err));
   }, []);
 
+  const allGames = () => {
+    const all = games.map((game) => <GameDisplay key={game.id} game={game} />);
+    return all;
+  };
+
+  const filterGames = (e) => {
+    const buttonId = e.target.id; // id of button is game platform
+    console.log(buttonId);
+    const selected = [];
+    games.filter((game) => {
+      if (buttonId === "playstation") {
+        selected.push(games);
+        console.log(game);
+      }
+    });
+  };
+
   return (
     <div>
       <h2 className="text-center">Games</h2>
       <div className="ui container text-center">
-        <select
-          name="category"
-          id="category-select"
-          className="ui multiple selection dropdown"
-        >
-          <option value="select-platform">Select Platform</option>
-          <option value="playstation">PlayStation</option>
-          <option value="nintendo-64">Nintendo 64</option>
-          <option value="dreamcast">Dreamcast</option>
-          <option value="super">Super Nintendo</option>
-          <option value="sega">Sega Genesis</option>
-        </select>
+        <div className="row">
+          <div className="game-selection-buttons">
+            <button className="ui button" id="all-games" onClick={filterGames}>
+              All Games
+            </button>
+            <button
+              className="ui button"
+              id="Playstation"
+              onClick={filterGames}
+            >
+              PlayStation
+            </button>
+            <button className="ui button" id="Nintendo64" onClick={filterGames}>
+              Nintendo 64
+            </button>
+            <button className="ui button" id="Dreamcast" onClick={filterGames}>
+              Dreamcast
+            </button>
+          </div>
+        </div>
       </div>
       <div className="container-fluid">
         <div className="row">

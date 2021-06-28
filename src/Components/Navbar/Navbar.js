@@ -6,10 +6,10 @@ function Navbar() {
   
   const memberMenu = () => {
     return (
-      <div className="ui container menu">
+      <div className="ui fluid container menu">
         <div className="secondary item">
           <a href="/">
-            <i className="barcode icon"></i>
+            <p className="app-name text-center">Blockbuster Mini</p>
           </a>
         </div>
         <div className="item">
