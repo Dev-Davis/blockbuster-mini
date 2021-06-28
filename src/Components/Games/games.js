@@ -26,14 +26,9 @@ function Games() {
 
   const filterGames = (e) => {
     const buttonId = e.target.id; // id of button is game platform
-    console.log(buttonId);
+    console.log(buttonId)
     const selected = [];
-    games.filter((game) => {
-      if (buttonId === "playstation") {
-        selected.push(games);
-        console.log(game);
-      }
-    });
+    games.filter((game) => buttonId === game.platform);
   };
 
   return (
