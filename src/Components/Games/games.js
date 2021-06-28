@@ -7,7 +7,7 @@ import axios from "axios";
 function Games() {
   const [games, setGames] = useState([]);
   // const [user, setUser] = useState(true);
-  const [filteredGames, setFilteredGames] = useState(false);
+  // const [filteredGames, setFilteredGames] = useState(false);
 
   useEffect(() => {
     axios
@@ -19,20 +19,6 @@ function Games() {
       .catch((err) => console.log("could not get games", err));
   }, []);
 
-  // const logIn = () => {
-  //   setUser(true);
-  //   return (
-  //     <button className="ui primary button">Login</button>
-  //     )
-  // };
-
-  // const logout = () => {
-  //   setUser(false);
-  //   return (
-  //     <button className="ui primary button">Login</button>
-  //   )
-  // };
-
   const allGames = () => {
     const all = games.map((game) => <GameDisplay key={game.id} game={game} />);
     return all;
@@ -40,11 +26,12 @@ function Games() {
 
   const filterGames = (e) => {
     const buttonId = e.target.id; // id of button is game platform
+    console.log(buttonId);
     const selected = [];
-    games.forEach((game) => {
-      if (game.platform === buttonId) {
-        selected.push(game);
-        console.log(selected);
+    games.filter((game) => {
+      if (buttonId === "playstation") {
+        selected.push(games);
+        console.log(game);
       }
     });
   };
@@ -76,9 +63,9 @@ function Games() {
       </div>
       <div className="container-fluid">
         <div className="row">
-          {/* {games.map((game) => (
+          {games.map((game) => (
             <GameDisplay key={game.id} game={game} />
-          ))} */}
+          ))}
         </div>
       </div>
     </div>
