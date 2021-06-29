@@ -1,26 +1,25 @@
-import axios from 'axios'
+import { useState } from 'react'
+import axios from "axios";
 
-const movies = '../../db.movies.json'
+// const movies = '../../db.movies.json'
 
-const getAllMovies = () => new Promise((resolve, reject) => {
-  axios.get(movies) 
-  .then((res) => {
-    const films = [];
-    if (res.data !== null) {
-      Object.keys(res.data).forEach((movieKey) => {
-        res.data[movieKey].id = movieKey;
-        films.push(res.data[movieKey]);
+const getAllMovies = () =>
+
+new Promise((resolve, reject) => {
+    const [movies, setMovies] = useState;
+    axios
+      .get("https://blockbuster-mini-default-rtdb.firebaseio.com/movies.json")
+      .then((res) => {
+        const movies = Object.values(res.data);
+        setMovies(movies);
       })
-    }
-    resolve(movies);
-  })
-  .catch(err => reject(err));
-})
+      .catch((err) => console.log("could not get movies", err));
+  });
 
 const theMovies = {
-  getAllMovies
-}
+  getAllMovies,
+};
 
 export default {
-  theMovies
-}
+  theMovies,
+};

@@ -1,0 +1,148 @@
+[
+  {
+    "game01": {
+      "id": 1,
+      "title": "Powerstone",
+      "developer": "Capcom",
+      "platform": "Dreamcast",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/1LygW4j/powerstone.jpg",
+      "price": 4.99
+    },
+    "game02": {
+      "id": 2,
+      "title": "NBA2K",
+      "developer": "Visual Concepts",
+      "platform": "Dreamcast",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/x7081pB/nba2k.jpg",
+      "price": 4.99
+    },
+    "game03": {
+      "id": 3,
+      "title": "Ready 2 Rumble Boxing",
+      "developer": "Midway Games",
+      "platform": "Dreamcast",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/hVgL4p2/r2r-boxing.jpg",
+      "price": 4.99
+    },
+    "game04": {
+      "id": 4,
+      "title": "Crazy Taxi",
+      "developer": "Acclaim Studios",
+      "platform": "Dreamcast",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/2F9ZDnG/crazy-taxi.jpg",
+      "price": 4.99
+    },
+    "game05": {
+      "id": 5,
+      "title": "NFL2K",
+      "developer": "Visual Concepts",
+      "platform": "Dreamcast",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/smdmZ77/nfl2k.jpg",
+      "price": 4.99
+    },
+    "game06": {
+      "id": 6,
+      "title": "House of the Dead 2",
+      "developer": "Sega AM1",
+      "platform": "Dreamcast",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/D8LFfFn/hotd-2.jpg",
+      "price": 4.99
+    },
+    "game07": {
+      "id": 7,
+      "title": "Tony Hawks's Pro Skater",
+      "developer": "Activision, Neversoft",
+      "platform": "Playstation",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/9y37ZPK/thps.jpg",
+      "price": 4.99
+    },
+    "game08": {
+      "id": 8,
+      "title": "Twisted Metal",
+      "developer": "Incognito Entertainment",
+      "platform": "Playstation",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/wpTfhRb/twisted-metal.jpg",
+      "price": 4.99
+    },
+    "game09": {
+      "id": 9,
+      "title": "Tomb Raider",
+      "developer": "Square Enix",
+      "platform": "Playstation",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/xqvFRsv/tomb-raider.jpg",
+      "price": 4.99
+    },
+    "game10": {
+      "id": 10,
+      "title": "Resident Evil 2",
+      "developer": "Capcom",
+      "platform": "Playstation",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/b68gFMM/resident-evil.jpg",
+      "price": 4.99
+    },
+    "game11": {
+      "id": 11,
+      "title": "Silent Hill",
+      "developer": "Team Silent",
+      "platform": "Playstation",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/N3PVT6s/cilent-hill.png",
+      "price": 4.99
+    },
+    "game12": {
+      "id": 12,
+      "title": "Super Mario 64",
+      "developer": "Nintendo",
+      "platform": "Nintendo64",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/FnNFkNr/super-mario-64.jpg",
+      "price": 4.99
+    },
+    "game13": {
+      "id": 13,
+      "title": "GoldenEye 007",
+      "developer": "Nintendo, Rare",
+      "platform": "Nintendo64",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/1qmWX5q/007.jpg",
+      "price": 4.99
+    },
+    "game14": {
+      "id": 14,
+      "title": "WWF No Mercy",
+      "developer": "THQ",
+      "platform": "Nintendo64",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/VMMXnJv/no-mercy.jpg",
+      "price": 4.99
+    },
+    "game15": {
+      "id": 15,
+      "title": "Mario Kart 64",
+      "developer": "Nintendo",
+      "platform": "Nintendo64",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/k149gQZ/Mario-Kart-64box.png",
+      "price": 4.99
+    },
+    "game16": {
+      "id": 16,
+      "title": "WCW vs NWO Revenge",
+      "developer": "THQ",
+      "platform": "Nintendo64",
+      "numOfCopies": 5,
+      "img": "https://i.ibb.co/4NHSCm0/revenge.jpg",
+      "price": 4.99
+    }
+  }
+]

@@ -6,8 +6,6 @@ import axios from "axios";
 
 function Games() {
   const [games, setGames] = useState([]);
-  // const [user, setUser] = useState(true);
-  // const [filteredGames, setFilteredGames] = useState(false);
 
   useEffect(() => {
     axios
@@ -19,21 +17,10 @@ function Games() {
       .catch((err) => console.log("could not get games", err));
   }, []);
 
-  const allGames = () => {
-    const all = games.map((game) => <GameDisplay key={game.id} game={game} />);
-    return all;
-  };
-
   const filterGames = (e) => {
     const buttonId = e.target.id; // id of button is game platform
-    console.log(buttonId);
-    const selected = [];
-    games.filter((game) => {
-      if (buttonId === "playstation") {
-        selected.push(games);
-        console.log(game);
-      }
-    });
+    console.log(buttonId)
+    games.filter((game) => buttonId === game.platform);
   };
 
   return (
