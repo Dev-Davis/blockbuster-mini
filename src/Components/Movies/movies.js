@@ -8,36 +8,38 @@ import "./movies.css";
 
 function Movies() {
   const [movies, setMovies] = useState([]);
-  const [category, setCategory] = useState("all");
+  const [filter, setFilter] = useState([]);
+  const [selectedCategory, setCategory] = useState("all");
 
   const handleFilterChange = (e, filterType) => {
+    const newCategory = e.target.value;
+
+    // todo: this needs to check for all movies and set that
     switch (filterType) {
       case "category":
-        setCategory(e.target.value);
+        setCategory(newCategory);
+        const selectedMovies = movies.filter(
+          (movie) => movie.category === newCategory
+        );
+        setFilter(selectedMovies);
         break;
+      case filter === "all":
+        setFilter(movies);
       default:
         break;
     }
   };
 
-  const getAllMovies = () => {
-    axios
-    .get("https://blockbuster-mini-default-rtdb.firebaseio.com/movies.json")
-    .then((res) => {
-      const movies = Object.values(res.data);
-    })
-    .catch((err) => console.log("could not get movies", err));
-  }
-  getAllMovies()
-
   useEffect(() => {
-    let selectedMovies = movies; 
-
-    if(category !== "all") {
-      selectedMovies = movies.filter((movie) => movie.category === category)
-    }
-    setMovies(selectedMovies)
-  }, [category]);
+    axios
+      .get("https://blockbuster-mini-default-rtdb.firebaseio.com/movies.json")
+      .then((res) => {
+        const movies = Object.values(res.data);
+        setMovies(movies);
+        setFilter(movies);
+      })
+      .catch((err) => console.log("could not get movies", err));
+  }, []);
 
   return (
     <div>
@@ -64,7 +66,7 @@ function Movies() {
       </div>
       <div className="container-fluid">
         <div className="row">
-          {movies.map((movie) => (
+          {filter.map((movie) => (
             <MovieDisplay key={movie.id} movie={movie} />
           ))}
         </div>

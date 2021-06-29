@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Navbar.css";
 
 function Navbar() {
+  const [user, setUser] = useState(false)
+
+  function login(){
+    setUser(true)
+  }
+
+  function logout() {
+    setUser(false)
+  }
   
   const memberMenu = () => {
     return (
@@ -25,7 +34,7 @@ function Navbar() {
           <a href="/profile/:id/cart">Cart</a>
         </div>
         <div className="right item">
-          <a href="/">Sign Out</a>
+          <a href="/" onClick={logout}>Sign Out</a>
         </div>
       </div>
     );
@@ -35,12 +44,12 @@ function Navbar() {
     return (
       <div className="ui menu">
         <div className="item">Blockbuster Mini</div>
-        <div className="right item">Sign In</div>
+        <div className="right item" onClick={login()}>Sign In</div>
       </div>
     );
   };
 
-  return <div className="nav">{memberMenu()}</div>;
+  return <div className="nav">{({user} ? memberMenu() : guestMenu())}</div>;
 }
 
 export default Navbar;
