@@ -5,13 +5,12 @@ import "./movieDisplay.css"
 function MovieDisplay({ movie }) {
   const [stock, setStock] = useState((movie.numOfCopies))
 
+  // todo: set function to subtract from numOfCopies when clicked, then set conditional incase out of stock
   const numLeft = () => {
     const stock = (movie.numOfCopies);
     if(stock >= 5) {
       return (stock - 1);
     } 
-    setStock(stock);
-    console.log('added to cart')
   }
 
   return (

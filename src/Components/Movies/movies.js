@@ -11,6 +11,7 @@ function Movies() {
   const [filter, setFilter] = useState([]);
   const [selectedCategory, setCategory] = useState("all");
 
+// function to set the filtered movies to return
   const handleFilterChange = (e, filterType) => {
     const newCategory = e.target.value;
 
@@ -52,15 +53,18 @@ function Movies() {
           className="ui multiple selection dropdown"
         >
           <option value="all">All Movies (Select a genre)</option>
-          <option value="Horror">Horror</option>
-          <option value="Comedy">Comedy</option>
           <option value="Action">Action</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Crime">Crime</option>
+          {/* <option value="Drama">Drama</option> */}
+          <option value="Family">Family</option>
+          {/* <option value="Fantasy">Fantasy</option> */}
+          <option value="Horror">Horror</option>
+          <option value="Mystery">Mystery</option>
           <option value="Romance">Romance</option>
           <option value="Sci-Fi">Sci-fi</option>
           <option value="Sport">Sport</option>
-          <option value="Family">Family</option>
-          <option value="Crime">Crime</option>
-          <option value="Adventure">Adventure</option>
           <option value="Thriller">Thriller</option>
         </select>
       </div>

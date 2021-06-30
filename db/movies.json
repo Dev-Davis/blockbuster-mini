@@ -2,7 +2,7 @@
   "movie01": {
     "id": 1,
     "title": "Clueless",
-    "category": "Romance",
+    "category": ["Romance", "Comedy"],
     "numOfCopies": 5,
     "img": "https://i.ibb.co/0Qkrx1c/clueless.jpg",
     "price": 3.99
@@ -10,7 +10,7 @@
   "movie02": {
     "id": 2,
     "title": "Waterboy",
-    "category": "Sport",
+    "category": ["Sport", "Comedy"],
     "rating": "PG-13",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/K248Hkj/waterboy.jpg",
@@ -19,7 +19,7 @@
   "movie03": {
     "id": 3,
     "title": "Good Burger",
-    "category": "Comedy",
+    "category": ["Comedy", "Family"],
     "rating": "PG",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/6PVZQDt/good-burger.jpg",
@@ -28,7 +28,7 @@
   "movie04": {
     "id": 4,
     "title": "Blank Check",
-    "category": "Family",
+    "category": ["Family", "Comedy", "Crime"],
     "rating": "PG",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/pdJXbSn/blank-check.jpg",
@@ -37,7 +37,7 @@
   "movie05": {
     "id": 5,
     "title": "Juice",
-    "category": "Crime",
+    "category": ["Crime", "Action", "Drama"],
     "rating": "R",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/pK6K0cX/juice.jpg",
@@ -46,7 +46,7 @@
   "movie06": {
     "id": 6,
     "title": "Starship Troopers",
-    "category": "Sci-Fi",
+    "category": ["Sci-Fi", "Action", "Adventure"],
     "rating": "R",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/5k8q4p4/starship-troopers.jpg",
@@ -55,7 +55,7 @@
   "movie07": {
     "id": 7,
     "title": "The Matrix",
-    "category": "Action",
+    "category": ["Action", "Sci-Fi"],
     "rating": "R",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/vh1xgNX/the-matrix.jpg",
@@ -64,7 +64,7 @@
   "movie08": {
     "id": 8,
     "title": "Twister",
-    "category": "Thriller",
+    "category": ["Thriller", "Action", "Adventure"],
     "rating": "PG-13",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/KwBCnM7/twister.jpg",
@@ -73,7 +73,7 @@
   "movie09": {
     "id": 9,
     "title": "Jurassic Park",
-    "category": "Adventure",
+    "category": ["Adventure", "Action", "Sci-Fi"],
     "rating": "PG-13",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/dpDGJQn/jurassic-park.jpg",
@@ -82,7 +82,7 @@
   "movie10": {
     "id": 10,
     "title": "Child's Play",
-    "category": "Horror",
+    "category": ["Fantasy", "Horror", "Thriller"],
     "rating": "R",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/7krX9QZ/childs-play.jpg",
@@ -91,7 +91,7 @@
   "movie11": {
     "id": 11,
     "title": "Scream",
-    "category": "Mystery",
+    "category": ["Mystery", "Horror"],
     "rating": "R",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/TkZ1gYc/Scream.jpg",
