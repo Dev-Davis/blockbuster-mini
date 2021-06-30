@@ -8,7 +8,7 @@ const Profile = () => {
         <div className="conatiner-fluid">
           <div className="row">
             <div className="col">
-              <h3>User Section</h3>
+              <h3>Hello User</h3>
             </div>
           </div>
         </div>
@@ -17,7 +17,7 @@ const Profile = () => {
         <div className="conatiner-fluid">
           <div className="row">
             <div className="col">
-              <h3>User Favorites</h3>
+              <h3>Here are some of your favorite movies</h3>
             </div>
           </div>
         </div>
