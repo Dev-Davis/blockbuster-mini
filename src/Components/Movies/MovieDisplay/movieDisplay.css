@@ -1,4 +1,19 @@
-.movie-cover {
+img {
   height: 25rem;
   width: 15rem;
+  border: 2px solid #F4BB37;
+  border-radius: 0.3rem;
+}
+
+.movie-title {
+  margin-bottom: 0.5rem;
+}
+
+.movie-price {
+  margin-top: 0.5rem;
+}
+
+.btn-primary {
+  border: 2px solid #f4bb37;
+  margin-top: 0.5rem;
 }

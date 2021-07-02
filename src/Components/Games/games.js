@@ -48,7 +48,7 @@ function Games() {
               onChange={(e) => filterGames(e, "platform")}
               className="ui multiple selection dropdown"
             >
-              <option value="all">All Movies (Select a genre)</option>
+              <option value="all">All Games (Select a platform)</option>
               <option value="Dreamcast">Dreamcast</option>
               <option value="Nintendo64">Nintendo 64</option>
               <option value="Playstation">Playstation</option>

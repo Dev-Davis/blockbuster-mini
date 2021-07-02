@@ -11,10 +11,10 @@ function gamesDisplay({ game }) {
 
   return (
     <div className="col cover-border text-center" id={game.platform}>
-      <h3>{game.title}</h3>
+      <h3 className="game-title">{game.title}</h3>
       <img src={game.img} alt="game-cover" className="game-cover" />
       <p className="game-price">${game.price}/night</p>
-      <p>Number of copies in stock: {game.numOfCopies}</p>
+      <p className="stock">Number of copies in stock: {game.numOfCopies}</p>
       <button className="btn btn-primary addToCart" id={game.id} onClick={addToCart}>Add To Cart</button>
     </div>
   );

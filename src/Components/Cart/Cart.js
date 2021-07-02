@@ -1,9 +1,9 @@
-import React from react
+import React from 'react'
 
 function Cart() {
   return (
     <div className="cart">
-      <h1>Your cart</h1>
+      <h1 className="cart-title text-center">Your Cart</h1>
     </div>
   )
 }

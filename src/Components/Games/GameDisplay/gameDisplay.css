@@ -8,3 +8,15 @@
   margin: 0.5rem;
   padding: 0.5rem;
 }
+
+.game-title {
+  margin-bottom: 0.5rem;
+}
+
+.game-price, .stock {
+  margin: 1rem;
+}
+
+p {
+  margin: 0;
+}
