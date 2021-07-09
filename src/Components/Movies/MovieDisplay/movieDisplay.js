@@ -3,7 +3,7 @@ import React, {useState} from "react"
 import "./movieDisplay.css"
 
 function MovieDisplay({ movie }) {
-  const [stock, setStock] = useState((movie.numOfCopies))
+  const [stock] = useState((movie.numOfCopies))
 
   // todo: set function to subtract from numOfCopies when clicked, then set conditional incase out of stock
   const inventory = () => {
