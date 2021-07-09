@@ -4,19 +4,21 @@ import GameDisplay from "./GameDisplay/gameDisplay";
 
 import axios from "axios";
 
+const gameplay = require("../../assets/db/games.json")
+
 function Games() {
   const [games, setGames] = useState([]);
   const [filter, setFilter] = useState([]);
-  const [selectedPlatform, setPlatform] = useState("all");
+  const [platform, setPlatform] = useState("all");
 
   const filterGames = (e, filterType) => {
-    const newPlatform = e.target.value;
+    const newPlatform = [e.target.value];
 
     switch (filterType) {
       case "platform":
-        setPlatform(newPlatform);
-        const selectedPlatform = games.filter(
-          (game) => game.platform === newPlatform
+        setPlatform(e.target.value);
+        const selectedPlatform = gameplay.filter(
+          (gameplay) => gameplay.platform === newPlatform
         );
         setFilter(selectedPlatform);
         break;
@@ -26,15 +28,16 @@ function Games() {
   };
 
   useEffect(() => {
-    axios
-      .get("https://blockbuster-mini-default-rtdb.firebaseio.com/games.json")
-      .then((res) => {
-        const games = Object.values(res.data);
-        setGames(games);
-        setFilter(games);
-      })
-      .catch((err) => console.log("could not get games", err));
-  }, []);
+    let filteredGames = gameplay;
+
+    if(platform !== "all") {
+      filteredGames = filteredGames.filter(
+        (gameplay) => gameplay.platform === platform
+      )
+    }
+    setGames(filteredGames)
+    
+  }, [platform]);
 
   return (
     <div>
@@ -58,7 +61,7 @@ function Games() {
       </div>
       <div className="container-fluid">
         <div className="row">
-          {filter.map((game) => (
+          {games.map((game) => (
             <GameDisplay key={game.id} game={game} />
           ))}
         </div>
