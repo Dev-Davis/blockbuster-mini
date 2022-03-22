@@ -5,7 +5,9 @@
     "category": ["Romance", "Comedy"],
     "numOfCopies": 5,
     "img": "https://i.ibb.co/0Qkrx1c/clueless.jpg",
-    "price": 3.99
+    "price": 3.99,
+    "year": 1995,
+    "description": "Shallow, rich and socially successful Cher is at the top of her Beverly Hills high school's pecking scale. Seeing herself as a matchmaker, Cher first coaxes two teachers into dating each other."
   },
   "movie02": {
     "id": 2,

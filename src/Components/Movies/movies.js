@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 
 import MovieDisplay from "./MovieDisplay/movieDisplay";
 
-import axios from "axios";
-
 import "./movies.css";
 
 const films = require("../../assets/db/films.json")

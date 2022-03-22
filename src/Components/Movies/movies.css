@@ -1,0 +1,36 @@
+.button-regulations {
+  display: flex;
+  justify-content: center;
+  align-items:center
+}
+
+.movieCartAdd {
+  background-color: #E79B01;
+  border: 1px solid rgb(255, 255, 255);
+  color: black;
+}
+
+.movieCartSub {
+  background-color: #1030AD;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.btn {
+  margin: 0 0.4em;
+}
+
+.btn:hover {
+  margin: 0 0.4em;
+  background-color: white;
+  color: black;
+}
+
+.movieCartFav {
+  background-color: #E79B01;
+  border: 1px solid rgb(255, 255, 255);
+  color: black;
+}
+
+p {
+  margin: 0.4em;
+}
