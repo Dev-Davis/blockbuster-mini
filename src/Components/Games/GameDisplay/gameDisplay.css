@@ -28,3 +28,7 @@ p {
 .game-copies-box {
   margin-bottom: 1em;
 }
+
+.btn-primary:active {
+  background-color: #f4bb37;
+}
