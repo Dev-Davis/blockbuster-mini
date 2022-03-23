@@ -5,7 +5,9 @@
     "category": ["Romance", "Comedy"],
     "numOfCopies": 5,
     "img": "https://i.ibb.co/0Qkrx1c/clueless.jpg",
-    "price": 3.99
+    "price": 3.99,
+    "year": 1995,
+    "description": "Shallow, rich and socially successful Cher is at the top of her Beverly Hills high school's pecking scale. Seeing herself as a matchmaker, Cher first coaxes two teachers into dating each other."
   },
   "movie02": {
     "id": 2,
@@ -14,7 +16,9 @@
     "rating": "PG-13",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/K248Hkj/waterboy.jpg",
-    "price": 3.99
+    "price": 3.99,
+    "year": 1998,
+    "description": "A waterboy for a college football team discovers he has a unique tackling ability and becomes a member of the team."
   },
   "movie03": {
     "id": 3,
@@ -23,7 +27,8 @@
     "rating": "PG",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/6PVZQDt/good-burger.jpg",
-    "price": 3.99
+    "price": 3.99,
+    "description": "A dim-witted teenager and his new coworker try to save the old burger joint they work for from failing after the opening of a brand new burger restaurant across the street, which's planning to put them out of business."
   },
   "movie04": {
     "id": 4,
@@ -32,7 +37,9 @@
     "rating": "PG",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/pdJXbSn/blank-check.jpg",
-    "price": 3.99
+    "price": 3.99,
+    "year": 1994,
+    "description": "After a bike accident, a young boy inadvertently gains possession of a check for $1 million and proceeds to spend it, unaware that the gangsters to whom it belongs are in pursuit."
   },
   "movie05": {
     "id": 5,
@@ -41,7 +48,9 @@
     "rating": "R",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/pK6K0cX/juice.jpg",
-    "price": 3.99
+    "price": 3.99,
+    "year": 1992,
+    "description": "Four inner-city teenagers get caught up in the pursuit of power and happiness, which they refer to as \"the juice\"."
   },
   "movie06": {
     "id": 6,
@@ -50,7 +59,9 @@
     "rating": "R",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/5k8q4p4/starship-troopers.jpg",
-    "price": 3.99
+    "price": 3.99,
+    "year": 1997,
+    "description": "Humans in a fascist, militaristic future wage war with giant alien bugs."
   },
   "movie07": {
     "id": 7,
@@ -59,7 +70,9 @@
     "rating": "R",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/vh1xgNX/the-matrix.jpg",
-    "price": 3.99
+    "price": 3.99,
+    "year": 1999,
+    "description": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence."
   },
   "movie08": {
     "id": 8,
@@ -68,7 +81,9 @@
     "rating": "PG-13",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/KwBCnM7/twister.jpg",
-    "price": 3.99
+    "price": 3.99,
+    "year": 1996,
+    "description": "Bill and Jo Harding, advanced storm chasers on the brink of divorce, must join together to create an advanced weather alert system by putting themselves in the cross-hairs of extremely violent tornadoes."
   },
   "movie09": {
     "id": 9,
@@ -77,7 +92,9 @@
     "rating": "PG-13",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/dpDGJQn/jurassic-park.jpg",
-    "price": 3.99
+    "price": 3.99,
+    "year": 1993,
+    "description": "A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose."
   },
   "movie10": {
     "id": 10,
@@ -86,7 +103,9 @@
     "rating": "R",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/7krX9QZ/childs-play.jpg",
-    "price": 3.99
+    "price": 3.99,
+    "year": 1988,
+    "description": "A single mother gives her son a much sought-after doll for his birthday, only to discover that it is possessed by the soul of a serial killer."
   },
   "movie11": {
     "id": 11,
@@ -95,6 +114,8 @@
     "rating": "R",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/TkZ1gYc/Scream.jpg",
-    "price": 3.99
+    "price": 3.99,
+    "year": 1996,
+    "description": "A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by using horror films as part of a deadly game."
   }
 }

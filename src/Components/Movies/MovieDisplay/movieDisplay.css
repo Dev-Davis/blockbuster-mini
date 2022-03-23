@@ -15,5 +15,56 @@ img {
 
 .btn-primary {
   border: 2px solid #f4bb37;
-  margin-top: 0.5rem;
+  margin-top: 0rem;
+}
+
+.description-label {
+  font-size: 11px;
+  margin-bottom: 1rem;
+}
+
+.description-label:hover {
+  cursor: pointer;
+}
+
+.button-regulations {
+  display: flex;
+  justify-content: center;
+  align-items:center
+}
+
+.movieCartAdd {
+  background-color: #E79B01;
+  border: 1px solid rgb(255, 255, 255);
+  color: black;
+}
+
+.movieCartSub {
+  background-color: #1030AD;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.btn {
+  margin: 0 0.4em;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+.movieCartFav {
+  background-color: #E79B01;
+  /* border: 1px solid rgb(255, 255, 255); */
+  color: black;
+}
+
+p {
+  margin: 0.4em;
+}
+
+.desc-text {
+  margin-bottom: 1rem;
 }

@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 
 import GameDisplay from "./GameDisplay/gameDisplay";
 
-import axios from "axios";
-
 const gameplay = require("../../assets/db/games.json")
 
 function Games() {
