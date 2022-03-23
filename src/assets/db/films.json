@@ -98,7 +98,7 @@
   {
     "id": 10,
     "title": "Child's Play",
-    "category": "Horror",
+    "category": ["Horror", "Comedy"],
     "rating": "R",
     "numOfCopies": 5,
     "img": "https://i.ibb.co/7krX9QZ/childs-play.jpg",
