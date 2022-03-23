@@ -35,17 +35,17 @@ export default function GamesDisplay({ game }) {
         {stock ? `Number of copies in stock: ${stock}` : "Out of Stock"}
       </div>
       <div className="button-regulations">
-        <button className="btn btn-primary movieCartAdd" onClick={addToCart}>
+        <button className="btn btn-warning movieCartAdd" onClick={addToCart}>
           Add
         </button>
         <button
-          className="btn btn-danger movieCartSub"
+          className="btn btn-primary movieCartSub"
           onClick={removeFromCart}
         >
           Remove
         </button>
         <button
-          className="btn btn-danger movieCartFav"
+          className="btn btn-warning movieCartFav"
           onClick={removeFromCart}
         >
           Fav +
