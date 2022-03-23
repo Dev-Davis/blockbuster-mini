@@ -4,6 +4,7 @@ import "./movieDisplay.css";
 
 function MovieDisplay({ movie }) {
   const [stock, setStock] = useState(movie.numOfCopies);
+  const [showMore, setShowMore] = useState(false);
 
   const addInv = stock + 1;
   const subInv = stock - 1;
@@ -30,8 +31,14 @@ function MovieDisplay({ movie }) {
       <h3 className="movie-title">{movie.title}</h3>
       <img src={movie.img} alt="movie-cover" className="movie-cover" />
       <p className="movie-price">${movie.price}/night</p>
-      <p>Number of copies in stock: {stock}</p>
-      <p>Description</p>
+      <p>{`Number of copies in stock: ${stock}`}</p>
+      <p
+        className="description-label"
+        onClick={() => setShowMore(!showMore)}
+      >
+        {showMore ? "Hide Description" : "Click for Description" }
+      </p>
+      <div className="desc-text">{showMore ? movie.description : ""}</div>
       <div className="button-regulations">
         <button className="btn btn-primary movieCartAdd" onClick={addToCart}>
           Add

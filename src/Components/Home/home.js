@@ -5,7 +5,7 @@ import "./home.css";
 function Home() {
   return (
     <div>
-      <section className="container-fluid">
+      <section className="container-fluid home">
         <h2 className="text-center">Welcome to Blockbuster Mini</h2>
         <p className="text-center sub-title">
           Be kind, Rewind and make every night a Blockbuster night
