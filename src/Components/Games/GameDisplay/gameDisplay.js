@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./gameDisplay.css";
 
-function gamesDisplay({ game }) {
+export default function GamesDisplay({ game }) {
+  const [stock, setStock] = useState(game.numOfCopies);
+
+  const addInv = stock + 1;
+  const subInv = stock - 1;
+  // const gameCopies = game.numOfCopies;
+
+  // todo: set function to modify numOfCopies when clicked, then set conditional in case out of stock
   const addToCart = () => {
-    const buttonId = game.id;
-    console.log(buttonId);
+    if (stock === 0) {
+      setStock(0);
+    } else {
+      setStock(subInv);
+    }
   };
 
-  const watchTrailer = () => {
-    console.log("movie trailer");
+  const removeFromCart = () => {
+    if (stock === 5) {
+      setStock(5);
+    } else {
+      setStock(addInv);
+    }
   };
 
   return (
@@ -17,65 +31,26 @@ function gamesDisplay({ game }) {
       <h3 className="game-title">{game.title}</h3>
       <img src={game.img} alt="game-cover" className="game-cover" />
       <p className="game-price">${game.price}/night</p>
-      <p className="stock">Number of copies in stock: {game.numOfCopies}</p>
-      <button
-        className="btn btn-primary addToCart"
-        id={game.id}
-        onClick={addToCart}
-      >
-        Add To Cart
-      </button>
-      <button
-        type="button"
-        className="btn btn-primary"
-        // data-toggle="modal"
-        data-target="#gameTrailer"
-      >
-        Watch Trailer
-      </button>
-
-      {/* Modal */}
-      <div
-        className="modal fade"
-        id="gameTrailer"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-dialog-centered" role="document">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLongTitle">
-                Modal title
-              </h5>
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div className="modal-body">...</div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" className="btn btn-primary">
-                Save changes
-              </button>
-            </div>
-          </div>
-        </div>
+      <div className="game-copies-box">
+        {stock ? `Number of copies in stock: ${stock}` : "Out of Stock"}
+      </div>
+      <div className="button-regulations">
+        <button className="btn btn-primary movieCartAdd" onClick={addToCart}>
+          Add
+        </button>
+        <button
+          className="btn btn-danger movieCartSub"
+          onClick={removeFromCart}
+        >
+          Remove
+        </button>
+        <button
+          className="btn btn-danger movieCartFav"
+          onClick={removeFromCart}
+        >
+          Fav +
+        </button>
       </div>
     </div>
   );
 }
-
-export default gamesDisplay;
