@@ -1,8 +1,10 @@
 import React from 'react'
 
+import './Profile.css'
+
 const Profile = () => {
   return (
-    <div>
+    <div className="profile">
       <h2 className="text-center">Profile</h2>
       <section className="user-section text-center">
         <div className="conatiner-fluid">

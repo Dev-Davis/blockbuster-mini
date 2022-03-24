@@ -8,18 +8,28 @@ function MovieDisplay({ movie }) {
 
   const addInv = stock + 1;
   const subInv = stock - 1;
-
+  const cart = [];
 
   // todo: set function to subtract from numOfCopies when clicked, then set conditional incase out of stock
-  const addToCart = () => {
+  const addToFav = () => {
+    console.log('added to favs')
+  };
+
+  const addToCart = (movieId) => {
+    const movieCopy = { ...movie }
+    movieCopy[movieId] = movieCopy[movieId] + 1 || 1;
+    
+  }
+
+  const removeStock = () => {
     if (stock === 0) {
       setStock(0);
     } else {
       setStock(subInv);
     }
-  };
+  }
 
-  const removeFromCart = () => {
+  const addStock = () => {
     if (stock === 5) {
       setStock(5);
     } else {
@@ -38,18 +48,18 @@ function MovieDisplay({ movie }) {
       </p>
       <div className="desc-text">{showMore ? movie.description : ""}</div>
       <div className="button-regulations">
-        <button className="btn btn-warning movieCartAdd" onClick={addToCart}>
+        <button className="btn btn-warning movieCartAdd" onClick={removeStock}>
           Add
         </button>
         <button
           className="btn btn-primary movieCartSub"
-          onClick={removeFromCart}
+          onClick={addStock}
         >
           Remove
         </button>
         <button
           className="btn btn-warning movieCartFav"
-          onClick={removeFromCart}
+          onClick={addToFav}
         >
           Fav +
         </button>
