@@ -8,7 +8,7 @@ function Home() {
       <section className="container-fluid home">
         <h2 className="text-center">Welcome to Blockbuster Mini</h2>
         <p className="text-center sub-title">
-          Be kind, Rewind and make every night a Blockbuster night
+          Be kind, Rewind and make every night a Blockbuster Mini night
         </p>
         <div className="container">
           <div className="row">

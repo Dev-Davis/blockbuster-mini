@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import GameDisplay from "./GameDisplay/gameDisplay";
 
-const gameplay = require("../../assets/db/games.json")
+const gameplay = require("../../assets/db/games.json");
 
 function Games() {
   const [games, setGames] = useState([]);
@@ -28,13 +28,12 @@ function Games() {
   useEffect(() => {
     let filteredGames = gameplay;
 
-    if(platform !== "all") {
+    if (platform !== "all") {
       filteredGames = filteredGames.filter(
         (gameplay) => gameplay.platform === platform
-      )
+      );
     }
-    setGames(filteredGames)
-    
+    setGames(filteredGames);
   }, [platform]);
 
   return (
@@ -60,7 +59,7 @@ function Games() {
       <div className="container-fluid">
         <div className="row">
           {games.map((game) => (
-            <GameDisplay key={game.id} game={game} />
+            <GameDisplay key={game.id} game={game} gameCats={gameplay} />
           ))}
         </div>
       </div>
