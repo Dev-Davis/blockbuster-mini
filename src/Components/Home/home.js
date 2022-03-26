@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link, useHistory, useLocation } from "react-router-dom";
+import React from "react";
+import { useHistory, useLocation } from "react-router-dom";
 
 import { useAuth } from "../../contexts/AuthContext";
 
@@ -23,17 +23,20 @@ function Home() {
         </p>
         <div className="container">
           <div className="row">
-            <button
-              className="login-button ui button"
-              onClick={() => signInWithGoogle()
-              .then(user => {
-                handleRedirectToOrBack()
-              })
-              .catch(e => console.log(e.message))
-            }
-            >
-              Login with Google
-            </button>
+            <div className="text-center">
+              <button
+                className="login-button ui button col-2"
+                onClick={() =>
+                  signInWithGoogle()
+                    .then((user) => {
+                      handleRedirectToOrBack();
+                    })
+                    .catch((e) => console.log(e.message))
+                }
+              >
+                Login with Google
+              </button>
+            </div>
           </div>
         </div>
       </section>
