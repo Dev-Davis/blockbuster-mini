@@ -1,8 +1,19 @@
 import React from "react";
+import { useHistory, useLocation } from "react-router-dom";
+
+import { useAuth } from "../../contexts/AuthContext";
 
 import "./home.css";
 
 function Home() {
+  const { signInWithGoogle, login } = useAuth();
+  const location = useLocation();
+  const history = useHistory();
+
+  function handleRedirectToOrBack() {
+    history.replaceState(location.state?.from ?? "/profile");
+  }
+
   return (
     <div>
       <section className="container-fluid home">
@@ -12,9 +23,20 @@ function Home() {
         </p>
         <div className="container">
           <div className="row">
-            <button className="login-button ui button">
-              Login with Google
-            </button>
+            <div className="text-center">
+              <button
+                className="login-button ui button col-2"
+                onClick={() =>
+                  signInWithGoogle()
+                    .then((user) => {
+                      handleRedirectToOrBack();
+                    })
+                    .catch((e) => console.log(e.message))
+                }
+              >
+                Login with Google
+              </button>
+            </div>
           </div>
         </div>
       </section>
