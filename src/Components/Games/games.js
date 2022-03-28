@@ -25,6 +25,10 @@ function Games() {
     }
   };
 
+  const dreamcastSection = games.filter(game => {
+    
+  })
+
   useEffect(() => {
     let filteredGames = gameplay;
 

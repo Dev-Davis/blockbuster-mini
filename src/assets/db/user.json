@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "username": "Dott Diggler",
+    "isMember": true,
+    "proImg": "",
+    "userFavs": [],
+    "userCart": []
+  },
+  {
+    "id": 2,
+    "username": "Carson Smith",
+    "isMember": false,
+    "proImg": "",
+    "userFavs": [],
+    "userCart": []
+  }
+]
