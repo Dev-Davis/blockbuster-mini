@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "./Profile.css";
 
 const Profile = () => {
-  const [user, setUser] = useState([]);
   const getUser = require("../../assets/db/user.json");
   const info = getUser.map((user) => {
     return user;

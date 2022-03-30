@@ -31,8 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carousel-inner {
-  width: 60%;
-  border-radius: 2em;
+  width: 20%;
 }
 
 .carousel {
